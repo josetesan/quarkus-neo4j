@@ -19,7 +19,7 @@ kubectl expose deployment quarkus-quickstart --type=NodePort
 ## Check 
 
 - Must build dockerfile.jvm
-- Must create and endpoint and a service ( work for kubernetes 1.13)
+- Must create and endpoint and a service ( works for kubernetes 1.13)
 ```yaml
  kind: "Service"
   apiVersion: "v1"
@@ -44,7 +44,7 @@ kubectl expose deployment quarkus-quickstart --type=NodePort
         - port: 7687 
           name: "bolt"
 ```
-- Looks like the first time, default neo4j password it not properly set. Connect to browser and change it
+- Looks like the first time, default neo4j password is not properly set. You should connect to browser ( <ip>:7474 ) and change it
 - Test with
   - Retrieve
 ```http request
