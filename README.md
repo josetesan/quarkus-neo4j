@@ -56,3 +56,5 @@ curl -v -X POST $(minikube service quarkus-quickstart --url)/fruits -H 'Content-
   "name": "Apple"}'
 ```
 
+## TODO
+1. Check [quarkus-kubernetes](https://quarkus.io/guides/kubernetes)
